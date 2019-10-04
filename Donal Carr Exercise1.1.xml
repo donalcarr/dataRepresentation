@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Library> 
+    <Catelogue category="Technical">
+        <book>
+            <Author>Donal_C</Author> 
+            <ISBN>1234F</ISBN> 
+            <Title>XML_1</Title></book>
+        <book>
+            <Author>Donal_D</Author> 
+            <ISBN>1234G</ISBN> 
+            <Title>HTML_1</Title></book>
+    </Catelogue> 
+    <Catelogue category="Cooking">
+        <book>
+            <Author>Andrew_B</Author> 
+            <ISBN>5678G</ISBN> 
+            <Title>30 Minute Meals</Title></book>
+        <book>
+            <Author>Andrew_C</Author> 
+            <ISBN>5678H</ISBN> 
+            <Title>60 Minute Meals</Title></book>
+    </Catelogue> 
+</Library>
+
+
+
