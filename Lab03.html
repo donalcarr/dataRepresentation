@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!---Exercise 1,2,3,4,5,6,7-->
+<html>
+<head>
+	
+</head>
+<body>
+
+    <div style="display: none">
+        <h3>This is a hidden</h3>
+    </div>
+	<input id="name" type="text" value="enter name"/>
+    <br/>
+    <button onclick="buttonClicked()">click me</button><br/>
+    <div id="output">output will go here</div>
+
+    <div id="div1" style="background-color: blue;">
+    <br/>
+    <button onclick="showDiv2()">show Div2</button>
+    </div>
+    <div id="div2" style="background-color: red; display: none">
+    <br/>
+    <button onclick="showDiv1()">show Div1</button>
+    </div>
+    <input type="number" onchange ="checkNumber(this)"/>
+    <div id="output2">output2 will go here</div>
+    <br/>
+    <div id="output3">output3 will go here</div>
+
+<script>
+
+	function buttonClicked(){
+                var output= document.getElementById('name').value
+                document.getElementById('output').innerText = output
+            }
+
+    function showDiv2(){
+                document.getElementById("div1").style.display = "none";
+                document.getElementById("div2").style.display = "block";
+            }
+    function showDiv1(){
+                document.getElementById("div1").style.display = "block";
+                document.getElementById("div2").style.display = "none";
+            }
+    function checkNumber(inputElement){
+        var value = inputElement.value
+                if( value <20){
+                    document.getElementById("output2").innerText = "too low"
+                }else if (value > 20){
+                    document.getElementById("output2").innerText = "too high"
+                }else{
+                    document.getElementById("output2").innerText = "just right"
+                }
+            }
+
+    for (var i = 0; i< 10; i++){
+         console.log(i);
+         }
+
+    var names = ['joe','Mary', 'Fred']
+    var output3 = ' '
+        for (name of names){
+             output3 += name + '<br/>'
+             }
+    document.getElementById("output3").innerHTML = output3
+    
+    var book ={}
+    book.title = "JAVA"
+    book.author = "AB"
+    book.isbn = "3456"  
+    console.log("book is "+ JSON.stringify( book) )
+    console.log("Hello World")
+</script>  
+</body>
+
+</html>
