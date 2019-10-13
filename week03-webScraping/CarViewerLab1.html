@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--code adapted from andrewbeattycourseware - comments added-->
+<html>
+    <head>
+        <title> view Cars</title>
+        <!--css styling using bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Cars</h1>
+        <!--div tags for CSS styling or easy access to HTML elements--> 
+        <div> <button>Create</button></div>
+        <div>
+        <!--add table and table rows denoted by table header th and table row tr -->
+            <table class="table">
+                <tr>
+                        <th>Reg</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Price</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                </tr>
+                <tr>
+                        <td>191 Mo 123</td>
+                        <td>Ford</td>
+                        <td>Modeo</td>
+                        <td>25,000</td>
+                        <td><button>Update</button></td>
+                        <td><button>Delete</button></td>
+                        
+                </tr>
+                <tr>
+                    <td>12 G 123</td>
+                    <td>Fait</td>
+                    <td>Punto</td>
+                    <td>12</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                    
+                </tr>
+                <tr>
+                    <td>05 D 123</td>
+                    <td>Nissan</td>
+                    <td>Almera</td>
+                    <td>500</td>
+                    <td><button>Update</button></td>
+                    <td><button>Delete</button></td>
+                        
+                </tr>
+    
+            </table>
+        </div>
+        <div>
+        <!--span used to group inline elements and change text-->
+                <h2><span>Create and </span> <span>update</span> Car</h2>
+                <!--insert text box-->
+                Reg <input type="text" name="reg"/> <br/>
+                <!--insert drop down-->
+                Make <select name="make">
+                        <option value="Ford">Ford</option>
+                        <option value="Fiat">Fiat</option>
+                        <option value="Nissan">Nissan</option>
+                </select> <br/>
+                <!--insert text box-->
+                Model <input type="text" name="model"/> <br/>
+                <!--insert number box-->
+                Price <input type="number" name="price"/> <br/>
+                <!--add create and update buttons-->
+                <span><button>Create</button></span>
+                <span><button>Update</button></span>
+        </div>
+    </body>
+</html>
+
